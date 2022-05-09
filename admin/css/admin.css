@@ -1,0 +1,85 @@
+img {
+	max-width: 100%;
+}
+.plugin_head {
+	text-align: center;
+	padding: 100px 0;
+	box-sizing: border-box;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.admin_page_container {
+	margin-left: -20px;
+}
+
+.head_container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+h1.plugin_title {
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+h4.plugin_subtitle {
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.plugin_body {
+	max-width: 1000px;
+	margin: 50px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.doc_video_area {
+	width: 65%;
+	height: 100%;
+	background: #fff;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 0;
+	box-sizing: border-box;
+	margin-right: 5%;
+}
+
+.support_area {
+	width: 30%;
+}
+
+.single_support {
+	text-align: center;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+h4.support_title {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #430088;
+}
+
+.support_btn a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+	padding: 7px 15px;
+	border-radius: 50px;
+	transition: 0.2s;
+	margin: 0 5px;
+}
+
+.support_btn a:hover {
+	opacity: 0.8;
+}

@@ -1,0 +1,108 @@
+/*
+* Style Works for both Editor and Frontend
+*/
+.wp-block-migb-masonry-gallery {
+	transition: all 0.5s ease-in-out;
+	column-fill: initial;
+	.single-gallery-image {
+		display: block;
+		box-sizing: border-box;
+		overflow: hidden;
+		img {
+			transition: all 0.23s ease-in-out;
+			backface-visibility: hidden;
+			width: 100%;
+		}
+		&.zoom__in {
+			&:hover img {
+				transform: scale(1.05);
+			}
+		}
+		&.zoom__out {
+			img {
+				transform: scale(1.05);
+			}
+			&:hover img {
+				transform: scale(1);
+			}
+		}
+		&.gray__scale {
+			&:hover img {
+				filter: gray; /* IE6-9 */
+				-webkit-filter: grayscale(
+					1
+				); /* Google Chrome, Safari 6+ & Opera 15+ */
+				filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+			}
+		}
+	}
+}
+
+/* Masonry on Mobile */
+@media only screen and (max-width: 767px) {
+	.wp-block-migb-masonry-gallery {
+		@for $i from 1 through 6 {
+			&.pc__#{$i} {
+				column-count: #{$i};
+			}
+		}
+		@for $i from 0 through 101 {
+			&.pg__#{$i} {
+				gap: #{$i}px;
+			}
+		}
+		.single-gallery-image {
+			@for $i from 0 through 101 {
+				&.pg__#{$i} {
+					margin-bottom: #{$i}px;
+				}
+			}
+		}
+	}
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.wp-block-migb-masonry-gallery {
+		@for $i from 1 through 6 {
+			&.tc__#{$i} {
+				column-count: #{$i};
+			}
+		}
+		@for $i from 0 through 101 {
+			&.tg__#{$i} {
+				gap: #{$i}px;
+			}
+		}
+		.single-gallery-image {
+			@for $i from 0 through 101 {
+				&.tg__#{$i} {
+					margin-bottom: #{$i}px;
+				}
+			}
+		}
+	}
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+	.wp-block-migb-masonry-gallery {
+		@for $i from 1 through 6 {
+			&.dc__#{$i} {
+				column-count: #{$i};
+			}
+		}
+		@for $i from 0 through 101 {
+			&.dg__#{$i} {
+				gap: #{$i}px;
+			}
+		}
+		.single-gallery-image {
+			@for $i from 0 through 101 {
+				&.dg__#{$i} {
+					margin-bottom: #{$i}px;
+				}
+			}
+		}
+	}
+}

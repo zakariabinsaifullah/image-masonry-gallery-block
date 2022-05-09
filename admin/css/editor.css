@@ -1,0 +1,46 @@
+/* stylelint-disable comment-empty-line-before */
+/* stylelint-disable selector-class-pattern */
+/*
+* Responsive Devices
+*/
+.res__devices {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.res__label {
+	font-size: 13px !important;
+	line-height: 1 !important;
+	margin: 0 !important;
+}
+
+.res__btns .dashicons,
+.res__btns .dashicons-before:before {
+	width: 15px !important;
+	height: 15px !important;
+	font-size: 15px !important;
+}
+
+.res__btns .components-button.is-small {
+	height: 20px !important;
+	line-height: 20px !important;
+	padding: 0 5px !important;
+}
+
+/*
+* Default Components
+*/
+.components-flex.components-input-control.components-number-control.components-unit-control {
+	flex-direction: row !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+	margin-bottom: 20px;
+}
+
+.components-flex.components-input-control.components-number-control.components-unit-control
+	.components-input-control__container {
+	width: 60px !important;
+	flex: none !important;
+}

@@ -1,0 +1,65 @@
+{
+	"apiVersion": 2,
+	"name": "migb/masonry-gallery",
+	"version": "0.1.0",
+	"title": "Masonry Gallery",
+	"category": "media",
+	"description": "Showcase Images in a Masonry Gallery View.",
+	"keywords": ["Masonry", "Gallery", "Images", "Image Gallery"],
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"galleryId": {
+			"type": "string"
+		},
+		"images": {
+			"type": "array"
+		},
+		"colDevice": {
+			"type": "string",
+			"default": "desktop"
+		},
+		"deskCol": {
+			"type": "number",
+			"default": 3
+		},
+		"tabCol": {
+			"type": "number",
+			"default": 2
+		},
+		"phoneCol": {
+			"type": "number",
+			"default": 1
+		},
+		"gapDevice": {
+			"type": "string",
+			"default": "desktop"
+		},
+		"deskGap": {
+			"type": "number",
+			"default": 10
+		},
+		"tabGap": {
+			"type": "number",
+			"default": 10
+		},
+		"phoneGap": {
+			"type": "number",
+			"default": 5
+		},
+		"enableLightbox": {
+			"type": "boolean",
+			"default": true
+		},
+		"imageHoverEffect": {
+			"type": "string",
+			"default": "none"
+		}
+	},
+	"textdomain": "masonry-image-gallery",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
